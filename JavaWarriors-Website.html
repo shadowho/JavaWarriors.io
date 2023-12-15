@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JAVA WARRIORS</title>
+    <link rel="stylesheet" href="style.css">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@100;200;300;400;600;700;800&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <style>
+
+   </style>
+</head>
+<body>
+   <div class="container">
+      <section class="hero">
+         <div class="main-width">
+            <header>
+               <div class="logo">
+                  <h2><a href="#">GameOn</a></h2>
+               </div>
+               <nav>
+                  <ul>
+                     <li class="active"><a href="#" id="game">Home</a></li>
+                     <li><a href="#" id="login-link">Mission</a></li>
+                     <li><a href="#" id="register-link">Vision</a></li>
+                     <li class="btn"><a href="JavaWarriors.apk">Download</a></li>
+                  </ul>
+               </nav>
+            </header>
+            <div class="content">
+               <div class="main-text">
+                  <h6># Programming Game</h6>
+                  <h3>STI Academic Center</h3>
+                  <h1>JAVA WARRIORS</h1>
+                  <p id="paragraph-content">"Java Warriors: A 3D Java Coding Based Tower Defense Game in Android" is an accessible and engaging learning tool for senior high school students at STI Caloocan, focusing on Java programming. Join Java Warriors to enhance your coding skills through interactive gameplay and become a skilled Java coder.</p>
+                  <a href="JavaWarriors.apk">Play Now</a>
+                  <a href="#" class="cta"><i class="fa-solid fa-play"></i>Watch Demo</a>
+               </div>
+               <div class="social">
+                  <a href="#"><i class="fa-brands fa-android"></i></a>
+                  <a href="#"><i class="fa-brands fa-android"></i></a>
+                  <a href="#"><i class="fa-brands fa-android"></i></a>
+                  <a href="#"><i class="fa-brands fa-android"></i></a>
+                  <a href="#"><i class="fa-brands fa-android"></i></a>
+                  <a href="#"><i class="fa-brands fa-android"></i></a>
+               </div>
+               <div class="image">
+                  <img src="javawarrior.png" alt="">
+               </div>
+            </div>
+         </div>
+      </section>
+   </div>
+
+   <script>
+      // Get the necessary elements
+      const gameLink = document.getElementById('game');
+      const missionLink = document.getElementById('login-link');
+      const visionLink = document.getElementById('register-link');
+      const paragraphContent = document.getElementById('paragraph-content');
+
+      // Add event listeners to the links
+      gameLink.addEventListener('click', () => {
+         paragraphContent.textContent = '"Java Warriors: A 3D Java Coding Based Tower Defense Game in Android" is an accessible and engaging learning tool for senior high school students at STI Caloocan, focusing on Java programming. Join Java Warriors to enhance your coding skills through interactive gameplay and become a skilled Java coder.';
+      });
+
+      missionLink.addEventListener('click', () => {
+         paragraphContent.textContent = 'Our mission is to empower and inspire senior high school students at STI Caloocan in learning Java programming through our game "Java Warriors." We aim to provide an accessible and engaging platform that fosters creativity and problem-solving skills, overcoming barriers of limited resources and technology access.';
+      });
+
+      visionLink.addEventListener('click', () => {
+         paragraphContent.textContent = 'Our vision is to revolutionize Java programming education by gamifying the learning process and making it accessible to all students. We strive to create a community of skilled Java coders who are well-equipped for future opportunities in the digital age.';
+      });
+   </script>
+</body>
+</html>
